@@ -13,6 +13,7 @@ namespace Raphy\Symfony\MarkdownBundle\Twig\Extension;
 
 use Raphy\Symfony\MarkdownBundle\Parser\ParserCollection;
 use Twig\Extension\AbstractExtension;
+use Twig\TwigFilter;
 
 /**
  * Class MarkdownTwigExtension.
@@ -44,7 +45,7 @@ class MarkdownTwigExtension extends AbstractExtension
     public function getFilters()
     {
         return array(
-            new \Twig_SimpleFilter('markdown', [$this, 'markdownFilter'], ['is_safe' => ['html']]),
+            new TwigFilter('markdown', [$this, 'markdownFilter'], ['is_safe' => ['html']]),
         );
     }
 
