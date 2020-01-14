@@ -1,5 +1,5 @@
 {
-    "name": "raphy/markdown-bundle",
+    "name": "provolution/markdown-bundle",
     "description": "Provides a fully-featured Markdown bundle",
     "type": "symfony-bundle",
     "license": "MIT",
