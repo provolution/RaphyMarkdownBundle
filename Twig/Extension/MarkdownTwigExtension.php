@@ -12,13 +12,14 @@
 namespace Raphy\Symfony\MarkdownBundle\Twig\Extension;
 
 use Raphy\Symfony\MarkdownBundle\Parser\ParserCollection;
+use Twig\Extension\AbstractExtension;
 
 /**
  * Class MarkdownTwigExtension.
  *
  * @author Raphael De Freitas <raphael@de-freitas.net>
  */
-class MarkdownTwigExtension extends \Twig_Extension
+class MarkdownTwigExtension extends AbstractExtension
 {
     /**
      * Contains a the collection of parsers.
